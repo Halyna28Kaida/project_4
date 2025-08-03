@@ -5,4 +5,6 @@ SELECT
 FROM data_academy_content.economies AS e
 LEFT JOIN data_academy_content.countries AS c
 ON c.country = e.country
-WHERE continent = 'Europe';
+WHERE continent = 'Europe'
+AND e.year BETWEEN (SELECT min(year) FROM t_halyna_kaida_project_sql_primary_final) 
+AND (SELECT max(year) FROM t_halyna_kaida_project_sql_primary_final);
