@@ -1,11 +1,11 @@
 /*
-	4. 	Existuje rok, ve kterém byl meziroční nárůst cen 
+	4.  Existuje rok, ve kterém byl meziroční nárůst cen 
 		potravin výrazně vyšší než růst mezd (větší než 10 %)?
 */
 
 SELECT
 	*,
-	price_percent_increase - wage_percent_increase as increase_percent_diff
+	price_percent_increase - wage_percent_increase AS increase_percent_diff
 FROM (
 	SELECT
 		year,
@@ -22,5 +22,5 @@ FROM (
 		GROUP BY year
 	)
 	ORDER BY year
-)	
+)
 --WHERE price_percent_increase - wage_percent_increase > 10;
