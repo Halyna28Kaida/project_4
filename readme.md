@@ -44,4 +44,4 @@ According to the analysis, the level of GDP does not affect changes in wages and
 
 The **primary** table was created by joining the following tables: ***czechia_price, czechia_price_category, czechia_region, czechia_payroll, czechia_payroll_industry_branch***, using CTEs. When I was exploring tables I had found out that the data in the table ***czechia_price*** are for the period from 2006 to 2018, unlike the data in the table ***czechia_payroll*** are for the period 2000 to 2021. So, for comperison I chose the period from 2006 to 2018. Also I found out that in the table ***czechia_payroll*** we have data for *physical* and for *calculated* wages, so I sorted them by *calculated* wages. And data for *average number of employed persons* and *average wage per employee*, so I sorted them too by *average wage per employee* for correct outputs.
 
-The **secondary** table was created based on the tables *economies* and *countries* for **Europe** and for the same time period (2006 - 2018).
+The **secondary** table was created based on the tables ***economies*** and ***countries*** for **Europe** and for the same time period (2006 - 2018).
